@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import LnbMenu from "@/components/lnb/lnb-menu";
+import LnbMenu from "@/app/_components/lnb/lnb-menu";
 
 export const metadata: Metadata = {
   title: "김민준 프론트엔드 개발자 포트폴리오",
@@ -22,13 +22,11 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body>
-        <div className="flex min-h-screen">
-          <aside className="w-64 bg-gray-50 border-r border-gray-200">
+        <div className="flex p-24">
+          <aside className="sticky top-24 self-start h-fit">
             <LnbMenu />
           </aside>
-          <main className="flex-1 p-4">
-            {children}
-          </main>
+          <main className="flex-1">{children}</main>
         </div>
       </body>
     </html>

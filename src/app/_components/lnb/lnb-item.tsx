@@ -16,10 +16,10 @@ export default function LnbItem({ title, href }: LnbItemProps) {
       <Link
         href={href}
         className={
-          "flex items-center cursor-pointer px-4 py-2 transition-colors duration-200" +
+          "flex items-center cursor-pointer p-2 duration-200 text-detail-large" +
           (isActive
-            ? " text-white bg-blue-600"
-            : " text-gray-700 hover:text-white hover:bg-gray-800")
+            ? " text-white"
+            : " text-gray-600 hover:text-white")
         }
       >
         {title}
