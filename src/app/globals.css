@@ -1,3 +1,4 @@
+/* app/globals.css */
 @import url("https://cdn.jsdelivr.net/gh/sun-typeface/SUITE@2/fonts/variable/woff2/SUITE-Variable.css");
 @import "tailwindcss";
 
@@ -9,6 +10,65 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
+  --color-gray-10: #f6f6f6;
+  --color-gray-20: #eeeeee;
+  --color-gray-30: #e5e5e5;
+  --color-gray-40: #d3d3d3;
+  --color-gray-50: #aaaaaa;
+  --color-gray-60: #888888;
+  --color-gray-70: #666666;
+  --color-gray-80: #333333;
+  --color-gray-90: #191919;
+
+  --color-yellow-5: #fffde5;
+  --color-yellow-10: #fff8bf;
+  --color-yellow-20: #fff394;
+  --color-yellow-30: #ffef67;
+  --color-yellow-40: #feea3f;
+  --color-yellow-50: #ffe329;
+  --color-yellow-60: #ffd500;
+  --color-yellow-70: #febc00;
+  --color-yellow-80: #fea200;
+  --color-yellow-90: #fc7600;
+
+  --color-blue-5: #edf0ff;
+  --color-blue-10: #dce1ff;
+  --color-blue-20: #a7b5ff;
+  --color-blue-30: #8397ff;
+  --color-blue-40: #4f6bff;
+  --color-blue-50: #3e58f0;
+  --color-blue-60: #314ce7;
+  --color-blue-70: #2841d5;
+  --color-blue-80: #2038c1;
+  --color-blue-90: #13258f;
+
+  --color-red-5: #fce8e6;
+  --color-red-10: #fabab3;
+  --color-red-20: #f5948a;
+  --color-red-30: #ed6d5e;
+  --color-red-40: #eb5847;
+  --color-red-50: #e64937;
+  --color-red-60: #d93826;
+  --color-red-70: #c93221;
+  --color-red-80: #ba2c1c;
+  --color-red-90: #ab2617;
+  --color-red-100: #942114;
+
+  --color-green-5: #e4f9f5;
+  --color-green-10: #ccf4ea;
+  --color-green-20: #99e9d5;
+  --color-green-30: #66ddc0;
+  --color-green-40: #00c797;
+  --color-green-50: #00b78b;
+  --color-green-60: #009e78;
+  --color-green-70: #007e60;
+  --color-green-80: #00634b;
+  --color-green-90: #004d3a;
+
+  /* 폰트 패밀리 설정 */
+  --font-family-sans: "SUITE Variable", sans-serif;
+  --font-family-mono: "SUITE Variable", monospace;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,5 +81,70 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "SUITE Variable", sans-serif;
+  font-family: var(--font-family-sans);
+}
+
+@layer utilities {
+  .text-heading-large {
+    font-size: 45px;
+    line-height: 140%;
+    font-weight: 800;
+    letter-spacing: 0;
+  }
+
+  .text-heading-medium {
+    font-size: 36px;
+    line-height: 140%;
+    font-weight: 700;
+    letter-spacing: -0.02rem;
+  }
+
+  .text-heading-small {
+    font-size: 30px;
+    line-height: 140%;
+    font-weight: 600;
+    letter-spacing: -0.02rem;
+  }
+
+  .text-body-large {
+    font-size: 28px;
+    line-height: 160%;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+
+  .text-body-medium {
+    font-size: 23px;
+    line-height: 160%;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+
+  .text-body-small {
+    font-size: 22px;
+    line-height: 160%;
+    font-weight: 300;
+    letter-spacing: -0.04rem;
+  }
+
+  .text-detail-large {
+    font-size: 18px;
+    line-height: 160%;
+    font-weight: 300;
+    letter-spacing: -0.04rem;
+  }
+
+  .text-detail-small {
+    font-size: 12px;
+    line-height: 160%;
+    font-weight: 700;
+    letter-spacing: -0.04rem;
+  }
+
+  .text-label {
+    font-size: 8px;
+    line-height: 160%;
+    font-weight: 400;
+    letter-spacing: -0.04rem;
+  }
 }

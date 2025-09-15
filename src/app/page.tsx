@@ -1,30 +1,47 @@
-import styles from "@/styles/Home.module.css";
-import { TEXT_STYLES, Colors } from "@/styles/index";
+import { ChipItemProps } from "@/types/chip";
+import ChipList from "./_components/chip/chip-list";
 
-export default function Home() {
+export default function HomePage() {
+  const chipItems: ChipItemProps[] = [
+    {
+      title: "Frontend-Devloper",
+      backgroundColor: "bg-yellow-100",
+    },
+    {
+      title: "React",
+      href: "https://react.dev/",
+      backgroundColor: "bg-yellow-100",
+    },
+    {
+      title: "Flutter",
+      href: "https://flutter.dev/",
+      backgroundColor: "bg-yellow-100",
+    },
+  ];
+
   return (
-    <div className={styles.container} style={{ border: `1px solid ${Colors.YELLOW["60"]}` }}>
-      <h1
-        style={{
-          fontSize: TEXT_STYLES.headingMedium.fontSize,
-          fontWeight: TEXT_STYLES.headingMedium.fontWeight,
-          letterSpacing: TEXT_STYLES.headingMedium.letterSpacing,
-          lineHeight: TEXT_STYLES.headingMedium.lineHeight,
-        }}
-      >
-        김민준 프론트엔드 개발자 포트폴리오입니다.
-      </h1>
-      <p
-        style={{
-          fontSize: TEXT_STYLES.bodyMedium.fontSize,
-          fontWeight: TEXT_STYLES.bodyMedium.fontWeight,
-          letterSpacing: TEXT_STYLES.bodyMedium.letterSpacing,
-          lineHeight: TEXT_STYLES.bodyMedium.lineHeight,
-          color: Colors.GRAY["70"],
-        }}
-      >
-        React, Next.js, Flutter를 활용한 웹·모바일 프로젝트를 소개합니다.
-      </p>
+    <div className="max-w-4xl mx-auto gap-6 flex flex-row items-start">
+      <img
+        src="/profile.jpg"
+        alt="김민준 포트폴리오"
+        className="w-40 h-40 object-cover rounded-full flex-shrink-0"
+      />
+      <div className="flex flex-col justify-start gap-3">
+        <h1 className="text-heading-small">김민준</h1>
+        <h2 className="text-detail-large">1999.08.16</h2>
+        <ChipList items={chipItems} />
+        <p className="text-detail-large">
+          안녕하세요. 꼭꼭 씹어먹는 개발자 김민준입니다.
+          <br />
+          코드 읽기의 중요성을 알고, 빠르고 꼼꼼하게 코드를 분석할 수 있는
+          개발자입니다.
+          <br />
+          함께의 힘을 알고, 소통과 효율성의 긍정적 관계를 믿는 개발자입니다.
+          <br />
+          시스템 구조와 코드 디자인에 대한 고민을 끊임없이 이어가며 안정적인
+          서비스로 발전시키는 것을 매우 좋아합니다.
+        </p>
+      </div>
     </div>
   );
 }
