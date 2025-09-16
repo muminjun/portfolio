@@ -12,18 +12,17 @@ export default function LnbItem({ title, href }: LnbItemProps) {
   const isActive = pathname === href;
 
   return (
-    <>
-      <Link
-        href={href}
-        className={
-          "flex items-center cursor-pointer p-2 duration-200 text-body-small" +
-          (isActive
-            ? " text-white"
-            : " text-gray-600 hover:text-white")
+    <Link
+      href={href}
+      className={`
+        flex items-center cursor-pointer duration-200 text-detail-large
+        ${isActive
+          ? "text-white"
+          : "text-gray-600 hover:text-white"
         }
-      >
-        {title}
-      </Link>
-    </>
+      `}
+    >
+      {title}
+    </Link>
   );
 }

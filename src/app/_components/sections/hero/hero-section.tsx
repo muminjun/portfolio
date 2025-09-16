@@ -20,7 +20,7 @@ export default function HeroSection() {
     ];
     
   return (
-    <div className="flex max-w-4xl gap-6 flex-row items-start">
+    <div className="flex max-w-4xl lg:gap-6 gap-4 flex-col lg:flex-row items-start">
       <img
         src="/profile.jpg"
         alt="김민준 포트폴리오"

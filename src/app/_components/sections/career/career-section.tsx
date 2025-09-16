@@ -10,7 +10,7 @@ export default function CareerSection() {
       <h2 className="text-heading-medium">CAREER</h2>
       
       <ul className="list-disc">
-        <li className="flex flex-row gap-12">
+        <li className="flex flex-col lg:flex-row gap-5 lg:gap-12">
           <CompanyInfo 
             companyName={company.name}
             companySubName={company.subName}

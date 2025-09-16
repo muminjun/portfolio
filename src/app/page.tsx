@@ -6,7 +6,7 @@ import AboutSection from "./_components/sections/about/about-section";
 
 export default function HomePage() {
   return (
-    <div className="space-y-12 px-32">
+    <div className="space-y-12">
       <HeroSection />
       <Divider />
       <SkillsSection />
