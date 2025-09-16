@@ -22,8 +22,12 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body>
-        <div className="flex px-60 py-24">
-          <aside className="sticky top-24 self-start h-fit">
+        <div
+          className="mx-auto max-w-[1140px] 
+              w-[calc(100%-40px)] py-8 sm:py-16 
+              lg:w-[calc(100%-140px)] lg:py-24 lg:flex lg:gap-8"
+        >
+          <aside className="sticky top-20 self-start h-fit">
             <LnbMenu />
           </aside>
           <main className="flex-1">{children}</main>

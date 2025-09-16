@@ -1,27 +1,10 @@
-import { ChipItemProps } from "@/types/chip";
 import HeroSection from "./_components/sections/hero/hero-section";
 import SkillsSection from "./_components/sections/skills/skills-section";
 import Divider from "./_components/ui/divider/divider";
 import CareerSection from "./_components/sections/career/career-section";
+import AboutSection from "./_components/sections/about/about-section";
 
 export default function HomePage() {
-  const chipItems: ChipItemProps[] = [
-    {
-      title: "Frontend-Devloper",
-      backgroundColor: "bg-yellow-100",
-    },
-    {
-      title: "React",
-      href: "https://react.dev/",
-      backgroundColor: "bg-yellow-100",
-    },
-    {
-      title: "Flutter",
-      href: "https://flutter.dev/",
-      backgroundColor: "bg-yellow-100",
-    },
-  ];
-
   return (
     <div className="space-y-12 px-32">
       <HeroSection />
@@ -29,6 +12,8 @@ export default function HomePage() {
       <SkillsSection />
       <Divider />
       <CareerSection />
+      <Divider />
+      <AboutSection />
     </div>
   );
 }
