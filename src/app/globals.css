@@ -130,6 +130,13 @@ body {
   .text-detail-large {
     font-size: 18px;
     line-height: 160%;
+    font-weight: 700;
+    letter-spacing: -0.04rem;
+  }
+
+  .text-detail-medium {
+    font-size: 16px;
+    line-height: 160%;
     font-weight: 300;
     letter-spacing: -0.04rem;
   }

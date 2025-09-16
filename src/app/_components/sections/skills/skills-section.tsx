@@ -14,7 +14,7 @@ export default function SkillsSection() {
 
       <div className="flex flex-col gap-12">
         <div className="flex flex-col gap-4">
-          <h3 className="text-body-medium">
+          <h3 className="text-body-large">
             {developmentCategory.title}
           </h3>
           
@@ -43,7 +43,7 @@ export default function SkillsSection() {
         </div>
 
         <div className="flex flex-col gap-4">
-          <h3 className="text-body-medium">
+          <h3 className="text-body-large">
             {toolsCategory.title}
           </h3>
           
