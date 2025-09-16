@@ -1,5 +1,6 @@
 import { ChipItemProps } from "@/types/chip";
-import ChipList from "./_components/chip/chip-list";
+import HeroSection from "./_components/sections/hero/hero-section";
+import SkillsSection from "./_components/sections/skills/skills-section";
 
 export default function HomePage() {
   const chipItems: ChipItemProps[] = [
@@ -20,28 +21,9 @@ export default function HomePage() {
   ];
 
   return (
-    <div className="max-w-4xl mx-auto gap-6 flex flex-row items-start">
-      <img
-        src="/profile.jpg"
-        alt="김민준 포트폴리오"
-        className="w-40 h-40 object-cover rounded-full flex-shrink-0"
-      />
-      <div className="flex flex-col justify-start gap-3">
-        <h1 className="text-heading-small">김민준</h1>
-        <h2 className="text-detail-large">1999.08.16</h2>
-        <ChipList items={chipItems} />
-        <p className="text-detail-large">
-          안녕하세요. 꼭꼭 씹어먹는 개발자 김민준입니다.
-          <br />
-          코드 읽기의 중요성을 알고, 빠르고 꼼꼼하게 코드를 분석할 수 있는
-          개발자입니다.
-          <br />
-          함께의 힘을 알고, 소통과 효율성의 긍정적 관계를 믿는 개발자입니다.
-          <br />
-          시스템 구조와 코드 디자인에 대한 고민을 끊임없이 이어가며 안정적인
-          서비스로 발전시키는 것을 매우 좋아합니다.
-        </p>
-      </div>
+    <div className="space-y-12 px-32 py-16"> 
+      <HeroSection />
+      <SkillsSection />
     </div>
   );
 }
