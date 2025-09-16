@@ -8,7 +8,7 @@ export default function LnbMenu() {
   ];
 
   return (
-    <div className="flex flex-col justify-start gap-2 h-full">
+    <div className="flex flex-col justify-start h-full">
       {menuItems.map((item, index) => (
         <LnbItem key={index} title={item.title} href={item.href} />
       ))}

@@ -16,7 +16,7 @@ export default function LnbItem({ title, href }: LnbItemProps) {
       <Link
         href={href}
         className={
-          "flex items-center cursor-pointer p-2 duration-200 text-detail-large" +
+          "flex items-center cursor-pointer p-2 duration-200 text-body-small" +
           (isActive
             ? " text-white"
             : " text-gray-600 hover:text-white")

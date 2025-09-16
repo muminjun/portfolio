@@ -1,6 +1,7 @@
 import { ChipItemProps } from "@/types/chip";
 import HeroSection from "./_components/sections/hero/hero-section";
 import SkillsSection from "./_components/sections/skills/skills-section";
+import Divider from "./_components/ui/divider/divider";
 
 export default function HomePage() {
   const chipItems: ChipItemProps[] = [
@@ -21,9 +22,11 @@ export default function HomePage() {
   ];
 
   return (
-    <div className="space-y-12 px-32 py-16"> 
+    <div className="space-y-12 px-32">
       <HeroSection />
+      <Divider />
       <SkillsSection />
+      <Divider />
     </div>
   );
 }
