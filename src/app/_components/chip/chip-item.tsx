@@ -23,7 +23,7 @@ export default function ChipItem({
   );
 
   return (
-    <div className={`flex items-center gap-1 px-2 py-[1px] rounded-sm ${backgroundColor} ${textColor} text-detail-small`}>
+    <div className={`flex items-center gap-1 px-2 py-[1px] rounded-sm ${backgroundColor} ${textColor} text-detail-medium`}>
       {href ? (
         <a
           href={href}
