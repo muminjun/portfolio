@@ -3,8 +3,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #1b1b1e;
+  --background: #1b1b1e;
+  --foreground: #ffffff;
 }
 
 @theme inline {
@@ -69,13 +69,6 @@
   /* 폰트 패밀리 설정 */
   --font-family-sans: "SUITE Variable", sans-serif;
   --font-family-mono: "SUITE Variable", monospace;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #1b1b1e;
-    --foreground: #ededed;
-  }
 }
 
 body {
