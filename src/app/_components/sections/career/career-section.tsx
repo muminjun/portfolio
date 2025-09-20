@@ -7,7 +7,7 @@ export default function CareerSection() {
 
   return (
     <section id="career" className="flex flex-col gap-8">
-      <h2 className="text-heading-medium">CAREER</h2>
+      <h2 className="text-heading-medium">Career</h2>
       
       <ul className="list-disc">
         <li className="flex flex-col lg:flex-row gap-5 lg:gap-12">
