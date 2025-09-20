@@ -33,10 +33,11 @@ export default function ProjectList() {
             <img
               src={PROJECTS_DATA[selected].thumbnail}
               alt={`${PROJECTS_DATA[selected].title} 썸네일`}
-              className="w-full h-48 object-cover rounded"
+              className="w-full h-48 object-contain rounded"
               loading="lazy"
               decoding="async"
             />
+
             <div className="flex flex-wrap gap-2">
               {PROJECTS_DATA[selected].chips.map((chip, cidx) => (
                 <ChipItem
@@ -49,16 +50,6 @@ export default function ProjectList() {
                 />
               ))}
             </div>
-            {PROJECTS_DATA[selected].href && (
-              <a
-                href={PROJECTS_DATA[selected].href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-3 py-2 rounded bg-gray-900 text-white hover:opacity-90 transition-opacity"
-              >
-                방문하기 ↗
-              </a>
-            )}
           </div>
         )}
       </Dialog>
